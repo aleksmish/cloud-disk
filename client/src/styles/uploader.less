@@ -1,0 +1,71 @@
+@import "../utils/const.less";
+
+.uploader {
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    background-color: @font-color;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    overflow-y: auto;
+
+    &__header{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    &__close {
+        font-weight: bold;
+        height: fit-content;
+        background-color: @background-color;
+        border: .5px solid @font-color;
+        padding: 2px 3px;
+    }
+
+    &__title {
+        color: @background-color;
+        font-size: 1.2rem;  
+    }
+}
+
+.upload-file {
+    background-color: @background-color;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 5px 10px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        word-break: break-word;
+    }
+
+    &__remove {
+        font-weight: bold;
+        height: fit-content;
+        background-color: @background-color;
+        border: .5px solid @font-color;
+        padding: 2px 3px;
+    }
+
+    &__progress-bar {
+        height: 1rem;
+        border-radius: 10px;
+        background-color: @font-color;
+        display: flex;
+        margin: 3px 0;
+    }
+
+    &__upload-bar {
+        background-color: #5663F7;
+        border-radius: 10px;
+    }
+
+    &__percentage {
+        color: @background-color;
+        left: calc(50% - 15px);
+        position: absolute;
+    }
+}

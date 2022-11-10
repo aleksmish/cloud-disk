@@ -1,0 +1,67 @@
+@import "../utils/const.less";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &__header {
+        margin-left: 10px;
+        font-size: 24px;
+        font-weight: 700;
+
+        >a {
+            text-decoration: none;
+        }
+    }
+
+    &__search {
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    &__login {
+        margin-left: auto;
+        margin-right: 15px;
+        
+        >a {
+            text-decoration: none;
+        }
+
+        &:hover{
+            text-decoration: underline;;
+        }
+    }
+
+    &__registration {
+        >a {
+            text-decoration: none;
+        }
+        
+        &:hover{
+            text-decoration: underline;;
+        }
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.container {
+    width: 1140px;
+    align-items: center;
+    display: flex;
+}

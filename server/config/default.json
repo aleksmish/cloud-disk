@@ -1,0 +1,7 @@
+{
+    "serverPort": 5000,
+    "dbURL": "mongodb+srv://admin:admin12345@cluster0.k6btjbt.mongodb.net/?retryWrites=true&w=majority",
+    "privateKey": "69f2986caa17f6aaac27bfc9fcd78575",
+    "filePath": "D:\\Script\\cloud_store\\server\\files",
+    "staticPath": "D:\\Script\\cloud_store\\server\\static"
+}

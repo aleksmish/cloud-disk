@@ -1,0 +1,19 @@
+.profile {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile__avatar {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+.profile__upload {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.profile__upload-input {
+  display: none;
+}

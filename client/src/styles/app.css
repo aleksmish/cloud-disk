@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #23272A;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  font-family: "Robonto", sans-serif;
+}
+#root {
+  width: 100%;
+}

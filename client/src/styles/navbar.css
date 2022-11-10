@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar__header {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar__header > a {
+  text-decoration: none;
+}
+.navbar__search {
+  width: 200px;
+  margin-left: 5px;
+}
+.navbar__login {
+  margin-left: auto;
+  margin-right: 15px;
+}
+.navbar__login > a {
+  text-decoration: none;
+}
+.navbar__login:hover {
+  text-decoration: underline;
+}
+.navbar__registration > a {
+  text-decoration: none;
+}
+.navbar__registration:hover {
+  text-decoration: underline;
+}
+.navbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.container {
+  width: 1140px;
+  align-items: center;
+  display: flex;
+}

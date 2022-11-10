@@ -1,0 +1,93 @@
+@import "../utils/const.less";
+
+.file {
+    margin: 10px 0;
+    grid-row:0;
+    border-bottom: 1px solid @font-color;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @hover-color;
+    }
+
+    &__name {
+        grid-column-start: 2;
+    }
+
+    &__img {
+        justify-self: center;
+        grid-column-start: 1;
+    }
+
+    &__date {
+        grid-column-start: 5;
+        justify-self: center;
+    }
+
+    &__size {
+        grid-column-start: 6;
+        justify-self: center;
+    }
+    
+    &__btn {
+        display: none;
+        width: 50%;
+        background-color: #fff;
+        padding: 5px 10px;
+        border: 1.5px solid @font-color;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: @hover-color;
+        }
+    }
+
+    &:hover &__download {
+        display: block;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    
+    &:hover &__delete {
+        display: block;
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+}
+
+.file-plate {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        height: 100px;
+        width: 100px;
+    }
+    &__btns {
+        display: none;
+        margin: 5px;
+    }
+    &__btn {
+        background-color: #fff;
+        padding: 5px 10px;
+        border: 1.5px solid @font-color;
+        border-radius: 5px;
+        margin: 3px;
+        &:hover {
+            background-color: @hover-color;
+        }
+    }
+    &:hover &__btns {
+        display: flex;
+    }
+    
+}
